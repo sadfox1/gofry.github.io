@@ -18,7 +18,7 @@ const internal = require('stream');
 // имя файла, в который нужно сохранить данные
 const fileName = 'bd.json';
 
-setIntervalinternal(function (){
+setInterval(function (){
 obj = {
     "c" :  Math.random(),
     "r" : Math.random(),
