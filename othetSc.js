@@ -12,12 +12,13 @@ let obj = {
 
 // подключаем модуль для работы с файловой системой
 const fs = require('fs');
+const internal = require('stream');
 
 // данные, которые нужно сохранить в файл
 // имя файла, в который нужно сохранить данные
 const fileName = 'bd.json';
 
-function ref(){
+setIntervalinternal(function (){
 obj = {
     "c" :  Math.random(),
     "r" : Math.random(),
@@ -32,4 +33,4 @@ fs.writeFile(fileName, JSON.stringify(obj), (err) => {
   console.log('Данные сохранены в файл');
 });
 console.log("Мб записалось");
-}
+}, 5000);
