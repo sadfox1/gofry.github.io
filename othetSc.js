@@ -16,6 +16,8 @@ const fs = require('fs');
 // данные, которые нужно сохранить в файл
 // имя файла, в который нужно сохранить данные
 const fileName = 'bd.json';
+
+function ref(){
 obj = {
     "c" :  Math.random(),
     "r" : Math.random(),
@@ -30,4 +32,4 @@ fs.writeFile(fileName, JSON.stringify(obj), (err) => {
   console.log('Данные сохранены в файл');
 });
 console.log("Мб записалось");
-
+}
