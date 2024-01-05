@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet"  href="style.css">
+    <link type="Image/x-icon" href="img/pustaya.png" rel="icon">
+    
+    <title>Гофры</title>
+</head>
+<body>
+    <div id="inpBLOK">
+        <select id="inpEtage">
+            <option>1 этаж</option>
+            <option>2 этаж</option>
+            <option>3 этаж</option>
+            <option>4 этаж</option>
+            <option>5 этаж</option>
+            <option>6 этаж</option>
+          </select>
+          <select id="inpSpusk">
+            <option>1 спуск</option>
+            <option>2 спуск</option>
+            <option>3 спуск</option>
+            <option>ЦП</option>
+          </select>
+    </div>
+    
+    <div id="inpGOFRY">
+        <div id="inpKARTON">
+            <img src="img/karton.png"><span>Картон</span><span id="kartonCount">: 0</span><input type="button" value="-"></input><button>+</button>
+        </div>
+        <div id="inpTOVAR">
+            <img src="img/tovar.png"><span>Товар</span><span id="tovarCount">: 0</span><input type="button" value="-"></input><button>+</button>
+        </div>
+        <div id="inpSC">
+            <img src="img/sc.png"><span>СЦ</span><span id="scCount">: 0</span><input type="button" value="-"></input><button>+</button>
+        </div>
+        <div id="inpPUSTYE">
+            <img src="img/pustaya.png"><span>Пустые </span><span id="pustyeCount">: 0</span><input type="button" value="-"></input><button>+</button>
+        </div>
+    </div>
+
+    <div id="txtOUT">
+        <textarea name="txt" id="txtOutDOM" readonly>
+
+        </textarea>
+        <button id="copyBTN">Скопировать</button>
+    </div>
+
+    <div id="leftBlock">
+        <div id="leftBlockBTN"></div>
+
+        <div id="darkDIV">
+            <span>Темная тема</span><input type="checkbox" id="darkSW">
+        </div>
+        <button id="otgetBTN">Отчет по этажам</button>
+    </div>
+
+    <div id="mess" class="hid">
+        <span>Скопировано</span>
+    </div>
+    <script src="script.js"></script>   
+
+</script>
+</body>
+</html>
