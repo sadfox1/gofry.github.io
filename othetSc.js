@@ -3,6 +3,7 @@ let backBTN = document.getElementById("backBTN");
 const obj = {
     "c" : "hui",
     "r" : "hrew",
+    "r" : "hrew"
 }
 
 backBTN.addEventListener("click", function(e){
