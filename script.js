@@ -23,6 +23,8 @@ let darkMODE = false;
 let lightColor = "#ffffff";
 let darkColor = "#3c3c3c";
 
+
+
 let txtOUT = {
     etage: 1,
     Fspusk: {
@@ -58,14 +60,16 @@ etageSELECT.addEventListener("input", function(e){
     txtOUT.etage = etageSELECT.selectedIndex + 1;
     setNum();
     outProc();
-    sendOtchet();
+    
 });
 spuskSELECT.addEventListener("input", function(e){
     setNum();
+
 });
 
 document.addEventListener("click", function(e){
     outProc();
+
 });
 
 otgetBTN.addEventListener("click", function(e){
@@ -132,6 +136,7 @@ function outProc(){
     txtArea.innerHTML = txtAreaOUT;
 
     setNum();
+
 }
 
 function setNum(){
@@ -159,6 +164,7 @@ function setNum(){
         pustyeCount.innerHTML = ": " + txtOUT.cp.pustye;
         scCount.innerHTML = ": " + txtOUT.cp.sc;
     }
+    sendOtchet();
 }
 
 kartonDiv.children[3].addEventListener("click", function(e){
@@ -305,4 +311,5 @@ function darkThemeComp(){
 
 function sendOtchet(){
     
+    console.log("Сохранено");
 }
