@@ -36,7 +36,7 @@ var txtOUT = {
 
 function saveOtchet(mess){
   fs.writeFile(fileName, JSON.stringify(mess), (err) => {
-    console.log('Данные сохранены в файл');
+    console.log('ХУЙ');
   });
 }
 
